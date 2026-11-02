@@ -16,7 +16,7 @@ public class StudentResponseDTO {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(int studentAge) {
+        this.age = studnetAge;
     }
 }
