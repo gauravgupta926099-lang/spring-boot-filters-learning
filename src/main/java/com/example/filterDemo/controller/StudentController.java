@@ -20,9 +20,9 @@ public class StudentController {
     }
 
     @PostMapping
-    public ResponseEntity<StudentResponseDTO> createStudent(@RequestBody Student student){
+    public ResponseEntity<StudentResponseDTO> createStudent(@RequestBody Student studentRequest){
         return ResponseEntity.status(HttpStatus.CREATED)
-                .body(studentService.createStudent(student));
+                .body(studentService.createStudent(studentRequest));
     }
 
 }
